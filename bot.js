@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 client.on('message', message => { // هاذا للبرودكسات
-        var prefix = 'L6'; // هنا تقدر تغير البرفكس
+        var prefix = '#'; // هنا تقدر تغير البرفكس
 	var command = message.content.split(" ")[0];
 	if(command == prefix + 'ebc') { // الكوماند ebc
 		if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don`t have **MANAGE_MESSAGES** permission!");
@@ -58,7 +58,7 @@ client.on('message', message => { // هاذا للبرودكسات
 	}
 });
 
-var prefix = "prefix";
+var prefix = "#";
  
 client.on("message", message => {
  
@@ -109,8 +109,8 @@ client.on('message',async message => {
 }
 });
  
-const adminprefix = "prefix";
-const devs = ['owner id'];
+const adminprefix = "#";
+const devs = ['441626634970333195'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
